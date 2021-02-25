@@ -220,6 +220,20 @@ width: 500px;
  
 }
 
+.about-me-facts h4{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.about-me-facts h5{
+  text-align: center;
+}
+
+.about-me-facts .about-info{
+    margin-left: 20px;
+    width: 800px;
+}
+
 .about-me-facts{
     background-color: rgb(236, 236, 236);
     border-top-left-radius: 25px;
