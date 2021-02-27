@@ -237,7 +237,8 @@ width: 500px;
 .about-me-facts{
     background-color: rgb(236, 236, 236);
     border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-bottom: 20px;
 }
 
 .about-me-facts h2{
