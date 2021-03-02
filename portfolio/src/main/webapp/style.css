@@ -244,7 +244,7 @@ width: 500px;
 
 .about-me-facts h2{
     text-align: center;
-    padding-top: 20px; /**ADDED: to replace the <br> in the html file*/
+    padding-top: 20px;
 }
 
 .about-me-flex-container{
