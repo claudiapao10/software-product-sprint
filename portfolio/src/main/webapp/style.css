@@ -34,7 +34,7 @@ nav .nav a:hover{
     transition: 0.5s; 
   }
 
-                                                        /**INDEX.HTML*/
+/**INDEX.HTML*/
 
 .index-body{
    
@@ -71,7 +71,7 @@ float: left;
    right: 200px;
 }
 
-                                                            /**GALLERY.HTML*/
+/**GALLERY.HTML*/
 
 .gallery-header{
     text-align: center;
@@ -109,7 +109,7 @@ float: left;
     padding-right: 15px;
 }
 
-                                                    /** SPS */
+/** SPS */
 
 .sps-body{
    
@@ -181,7 +181,7 @@ width: 500px;
       border: 1px black;
   }
 
-                                                        /** ABOUT ME*/
+ /** ABOUT ME*/
 
 .about-me-body{
    
@@ -244,7 +244,7 @@ width: 500px;
 
 .about-me-facts h2{
     text-align: center;
-    padding-top: 20px; /**ADDED: to replace the <br> in the html file*/
+    padding-top: 20px; 
 }
 
 .about-me-flex-container{
@@ -258,7 +258,7 @@ width: 500px;
 
 }
 
-                                        /**PROJECTS*/
+/**PROJECTS*/
 
 .projects-body{
     font-family: 'Segoe UI', Tahoma;
@@ -326,7 +326,7 @@ font-style: italic;
 text-decoration: underline;
 }
 
-                                                    /** CONTACT */
+/** CONTACT */
 
 
 .contact-body h1{
