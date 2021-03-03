@@ -16,8 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>cmongetorres-sps-spring21
-</googleCloudProjectId>
+    <googleCloudProjectId>cmongetorres-sps-spring21</googleCloudProjectId>
   </properties>
 
   <dependencies>
