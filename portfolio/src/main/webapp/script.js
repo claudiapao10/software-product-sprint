@@ -29,8 +29,13 @@ function addRandomGreeting() {
 
 async function ShowServerText(){
     const responseFromServer = await fetch('/page-salutation');
-    const textFromResponse = await responseFromServer.text();
+    // const textFromResponse = await responseFromServer.text();
+    const jsonList = await responseFromServer.json();
+    console.log(jsonList);
+    const randomElement = jsonList[Math.floor(Math.random() * jsonList.length)];
 
-    const textContatiner = document.getElementById('text-container');
-    textContatiner.innerText = textFromResponse;
+    const textContatinerElement = document.getElementById('text-container');
+    textContatinerElement.innerText = randomElement;
+
 }
+
