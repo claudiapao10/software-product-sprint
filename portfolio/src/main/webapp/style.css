@@ -11,6 +11,7 @@ a{
 nav{
     background-color: black;
 }
+
 .navbar-logo{
     pointer-events: none;
     padding-left: 50px;
@@ -34,20 +35,18 @@ nav .nav a:hover{
     transition: 0.5s; 
   }
 
-/**INDEX.HTML*/
+ /**INDEX.HTML*/
 
 .index-body{
-   
     font-family: 'Segoe UI', Tahoma;
     scroll-behavior: smooth;
-   background-color: #FFFFFF;
+    background-color: #FFFFFF;
     background-size: cover;
-
 }
 
 .index-picture{
-width: fit-content;
-float: left;
+    width: fit-content;
+    float: left;
 }
 
 .index-img{
@@ -68,7 +67,7 @@ float: left;
     width: 600px;
     padding-top: 100px;
     padding-right: 100px;
-   right: 200px;
+    right: 200px;
 }
 
 /**GALLERY.HTML*/
@@ -82,13 +81,12 @@ float: left;
     text-align: left;
     padding-left: 30px;
 }
+
 .gallery-body{
-   
     font-family: 'Segoe UI', Tahoma;
     scroll-behavior: smooth;
     background-color: #9CAF88;
     background-size: cover;
-
 }
 
 .gallery-images{
@@ -99,7 +97,6 @@ float: left;
     width: 30%;
     height: 50%;
     margin: calc(10%/6);
-
 }
 
 #gallery-quote{
@@ -109,15 +106,14 @@ float: left;
     padding-right: 15px;
 }
 
-/** SPS */
+
+ /** SPS */
 
 .sps-body{
-   
     font-family: 'Segoe UI', Tahoma;
     scroll-behavior: smooth;
     background-color: #9CAF88;
     background-size: cover;
-
 }
 
 .sps-picture{
@@ -128,19 +124,17 @@ float: left;
   }
   
 .sps-picture img{
-height: 350px;
-width: 500px;
+    height: 350px;
+    width: 500px;
   }
 
 .sps-main-intro {
-      
-      font-weight: bolder;
-      float: left;
-      width: fit-content;
-      text-align: center;
-      padding: 60px;
-      padding-left: 150px; 
-    
+    font-weight: bolder;
+    float: left;
+    width: fit-content;
+    text-align: center;
+    padding: 60px;
+    padding-left: 150px; 
   }
   
 .sps-flex-container{
@@ -154,71 +148,63 @@ width: 500px;
   }
   
 .sps-main-intro p{
-    
-      width: 500px;
-      text-decoration: none;
-      font-weight: normal;
-      
+    width: 500px;
+    text-decoration: none;
+    font-weight: normal;
   }
   
 .sps-blog-content{
-      background-color:rgb(240, 240, 240);
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      margin-top: 30px;
+    background-color:rgb(240, 240, 240);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 30px;
   }
   
 .sps-blog-content h2{
-      text-align: center;
-      margin-top: 20px;
-      margin-left: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
   }
   
 .sps-blog-content .card{
-      margin: 20px;
-      width: 800px;
-      box-shadow: 4px, 4px, 10px rgba(38, 37, 0, 0.16);
-      border: 1px black;
+    margin: 20px;
+    width: 800px;
+    box-shadow: 4px, 4px, 10px rgba(38, 37, 0, 0.16);
+    border: 1px black;
   }
 
  /** ABOUT ME*/
 
 .about-me-body{
-   
     font-family: 'Segoe UI', Tahoma;
     scroll-behavior: smooth;
     background-color: #9CAF88;
     background-size: cover;
-
 }
 
 .about-main-content p{
     width: 1000px;
     margin-top: 20px;
-   
 }
 
 .about-main-content{
    display: flex;
    justify-content: center;
-   text-align: center;
-   
+   text-align: center;  
 }
+
 .about-me-body h1{
     margin-top: 20px;
     text-align: center;
 }
 
 .about-me-body .about-img {
- 
     text-align: center;
- 
 }
 
 .about-me-body .about-img img {
     margin-top: 15px;
-  border-radius: 40%;
- 
+    border-radius: 40%;
 }
 
 .about-me-facts h4{
@@ -244,21 +230,20 @@ width: 500px;
 
 .about-me-facts h2{
     text-align: center;
-    padding-top: 20px; 
+    padding-top: 20px;
+
 }
 
 .about-me-flex-container{
     display: flex;
-    justify-content: center;
-   
+    justify-content: center; 
 }
 .about-me-facts .card{
-  margin: 20px;
-  width: 30px;
-
+    margin: 20px;
+    width: 30px;
 }
 
-/**PROJECTS*/
+ /**PROJECTS*/
 
 .projects-body{
     font-family: 'Segoe UI', Tahoma;
@@ -270,8 +255,8 @@ width: 500px;
 .prject-intro .list-group{
     width: fit-content;
    margin-right: 0px;
-
 }
+
 .project-intro .list-group-item{
     margin-top: 10px;
     width: 1000px;
@@ -297,21 +282,20 @@ width: 500px;
 }
 
 .project-intro{
-align-content: center;
-width: fit-content;
-margin-left: 20px;
-
+    align-content: center;
+    width: fit-content;
+    margin-left: 20px;
 }
 
 .project-type{
-font-style: italic;
+    font-style: italic;
 }
 
 .projects-github-prof {
     margin-top: 20px;
     margin-bottom: 5px;
     display: flex;
-   justify-content: center;
+    justify-content: center;
 }
 
 .projects-github-prof a{
@@ -323,23 +307,21 @@ font-style: italic;
 }
 
 .projects-body a:hover{
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 /** CONTACT */
 
-
 .contact-body h1{
-
-margin-top: 50px;
-margin-left:  100px;
-
+    margin-top: 50px;
+    margin-left:  100px;
 }
 
 .socials{
     margin-top: 30px;
     margin-left:  100px; ;
 }
+
 .contact-body img{
     width: 80px;
     height: 80px ;
@@ -358,7 +340,6 @@ margin-left:  100px;
 .form{
     margin-left:  100px;
     width: fit-content;
-
 }
 
 .form div{
@@ -366,5 +347,5 @@ margin-left:  100px;
 }
 
 .form button{
-width: 100px;
+    width: 100px;
 }
