@@ -23,31 +23,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** Servlet that returns HTML that contains the page view count. */
-@WebServlet("/page-salutation")
+@WebServlet("/show-series")
 public final class PortfolioServer extends HttpServlet {
 
+    String[] series = new String[]{"Lupin", "Stranger Things", "New Girl", "Grace and Frankie", "Elite", "You", "Control Z", "The Good Place", "The Crown"};
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-    ArrayList<String> shows = new ArrayList<>();
-    shows.add("Lupin");
-    shows.add("New Girl");
-    shows.add("Stranger Things");
-
-    String json = convertToJsonUsingGson(shows);
+    Gson gson = new Gson();
+    String json = gson.toJson(series);
     response.setContentType("application/json;");
     response.getWriter().println(json);
-   
-  }
-
-  /**
-   * Converts a ServerStats instance into a JSON string using the Gson library. Note: We first added
-   * the Gson library dependency to pom.xml.
-   */
-  private String convertToJsonUsingGson(ArrayList<String> shows) {
-    Gson gson = new Gson();
-    String json = gson.toJson(shows);
-    return json;
   }
 }
