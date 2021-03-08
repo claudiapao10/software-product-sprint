@@ -7,12 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/form-handler")
 public class FormHandlerServlet extends HttpServlet {
-
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        this.doPost(request, response);
-    }
-
+   
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
@@ -29,4 +24,5 @@ public class FormHandlerServlet extends HttpServlet {
         response.getWriter().println(emailValue + " submitted: " + textValue);
         response.sendRedirect("http://cmongetorres-sps-spring21.appspot.com/");
     }
+
 }
