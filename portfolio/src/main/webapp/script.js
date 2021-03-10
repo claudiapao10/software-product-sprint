@@ -12,22 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
-}
-
-async function showRandomSeries(){
+async function showRandomSeries() {
     const responseFromServer = await fetch('/show-series');
     const jsonList = await responseFromServer.json();
     console.log(jsonList);
@@ -38,3 +23,17 @@ async function showRandomSeries(){
 
 }
 
+async function showAPIKey() {
+    const apiResponse = await fetch('/read-api');
+    console.log(apiResponse);
+    return apiResponse;
+
+}
+
+let map;
+
+function createMap() {
+ map = new google.maps.Map(
+      document.getElementById('map'),
+      {center: {lat: 18.14518822106114, lng: -65.76783663033663,}, zoom: 16});
+}

@@ -368,3 +368,10 @@ nav .nav a:hover{
 #submit-button{
     margin-left: 100px;
 }
+
+/**MAP*/
+
+.gMap #map {
+  height: 500px;
+  width: 500px;
+}

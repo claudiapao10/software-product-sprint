@@ -1,1 +1,3 @@
 runtime: java11
+includes:
+  ~/software-product-sprint/portfolio/src/main/appengine/env_variables.yaml
