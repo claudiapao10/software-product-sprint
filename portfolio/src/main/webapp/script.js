@@ -33,7 +33,42 @@ async function showAPIKey() {
 let map;
 
 function createMap() {
- map = new google.maps.Map(
-      document.getElementById('map'),
-      {center: {lat: 18.14518822106114, lng: -65.76783663033663,}, zoom: 16});
+
+    //Favorite locations geological positions for markers
+    const favorites = [{ position: new google.maps.LatLng(18.09322224508058, -65.8022236158021) },
+    { position: new google.maps.LatLng(18.145016345906864, -65.76745690553001) },
+    { position: new google.maps.LatLng(18.246863895964466, -65.78603360530974) },
+    { position: new google.maps.LatLng(18.380382709644405, -65.71606974475587) },
+    { position: new google.maps.LatLng(18.247836468782456, -65.61249008484697) },
+    { position: new google.maps.LatLng(18.37014634439548, -65.63686600037511) },
+
+    ];
+
+    //Creating map
+    map = new google.maps.Map(
+        document.getElementById('map'),
+        { center: { lat: 18.14518822106114, lng: -65.76783663033663, }, zoom: 10 });
+
+    //Creating markers
+    for (let i = 0; i < favorites.length; i++) {
+        const marker = new google.maps.Marker({
+            position: favorites[i].position,
+            animation: google.maps.Animation.DROP,
+            map: map,
+             icon: {
+                url: "http://labs.google.com/ridefinder/images/mm_20_black.png"
+            }
+        });
+        marker.addListener("click", toggleBounce);
+    }
+
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+
 }
+
