@@ -371,7 +371,20 @@ nav .nav a:hover{
 
 /**MAP*/
 
+.gMap{
+    font-family: 'Segoe UI', Tahoma;
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+}
+
 .gMap #map {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 600px;
+  padding-left: 35px;
+}
+
+.gMap h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }

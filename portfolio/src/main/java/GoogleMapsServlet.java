@@ -28,7 +28,7 @@ public final class GoogleMapsServlet extends HttpServlet {
     //reads the GOOGLE_MAPS_API_KEY environment variable.
     String apiKey = System.getenv("GOOGLE_MAPS_API_KEY");
     response.setContentType("text/html;");
-    response.getWriter().println(apiKey);
+    response.getWriter().print(apiKey);
 
   }
 }

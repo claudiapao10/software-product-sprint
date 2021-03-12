@@ -23,26 +23,17 @@ async function showRandomSeries() {
 
 }
 
-async function showAPIKey() {
-    const apiResponse = await fetch('/read-api');
-    console.log(apiResponse);
-    return apiResponse;
-
-}
-
 let map;
 
-function createMap() {
+ async function createMap() {
 
-    //Favorite locations geological positions for markers
+    //Geological positions for markers
     const favorites = [{ position: new google.maps.LatLng(18.09322224508058, -65.8022236158021) },
     { position: new google.maps.LatLng(18.145016345906864, -65.76745690553001) },
     { position: new google.maps.LatLng(18.246863895964466, -65.78603360530974) },
     { position: new google.maps.LatLng(18.380382709644405, -65.71606974475587) },
     { position: new google.maps.LatLng(18.247836468782456, -65.61249008484697) },
-    { position: new google.maps.LatLng(18.37014634439548, -65.63686600037511) },
-
-    ];
+    { position: new google.maps.LatLng(18.37014634439548, -65.63686600037511) },];
 
     //Creating map
     map = new google.maps.Map(
