@@ -27,10 +27,14 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
-async function ShowServerText(){
-    const responseFromServer = await fetch('/page-salutation');
-    const textFromResponse = await responseFromServer.text();
+async function showRandomSeries(){
+    const responseFromServer = await fetch('/show-series');
+    const jsonList = await responseFromServer.json();
+    console.log(jsonList);
+    const randomElement = jsonList[Math.floor(Math.random() * jsonList.length)];
 
-    const textContatiner = document.getElementById('text-container');
-    textContatiner.innerText = textFromResponse;
+    const textContatinerElement = document.getElementById('text-container');
+    textContatinerElement.innerText = randomElement;
+
 }
+

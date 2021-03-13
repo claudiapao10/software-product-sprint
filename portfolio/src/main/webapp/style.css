@@ -70,6 +70,16 @@ nav .nav a:hover{
     right: 200px;
 }
 
+#week2{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding-top: 50px;
+    padding-right: 85px;
+    float: right;
+    text-align: center;
+}
+
 /**GALLERY.HTML*/
 
 .gallery-header{
