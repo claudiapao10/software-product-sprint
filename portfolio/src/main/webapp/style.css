@@ -71,8 +71,6 @@ nav .nav a:hover{
 }
 
 #week2{
-    display: block;
-    position: absolute;
     bottom: 0;
     padding-top: 50px;
     padding-right: 85px;
@@ -358,4 +356,17 @@ nav .nav a:hover{
 
 .form button{
     width: 100px;
+}
+
+.mb-3{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+#exampleFormControlTextarea1.form-control{
+    width: 500px;
+}
+
+#submit-button{
+    margin-left: 100px;
 }
