@@ -370,3 +370,34 @@ nav .nav a:hover{
 #submit-button{
     margin-left: 100px;
 }
+
+/**MAP*/
+
+.gMap{
+    font-family: 'Segoe UI', Tahoma;
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.gMap #map {
+  height: 400px;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.gMap h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.gMap p{
+    float:right;
+    right: 130px;
+    position: absolute;
+    top: 150px;
+}
+
+
