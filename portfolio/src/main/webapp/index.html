@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="./style.css">
     <script src="script.js"></script>
     <title>Personal Portfolio - Claudia Monge</title>
+
+    <style>
+        h1 {
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+    </style>
 </head>
 
 <body class="index-body">
@@ -17,48 +30,71 @@
         <!--Nav bar = Menu/content bar-->
         <nav class="navbar sticky-top">
             <!-- Name -->
-            <a class="navbar-logo" href="logo">CLAUDIA/MONGE</a>
+            <a class="navbar-logo" href="#index-main-content">CLAUDIA/MONGE</a>
             <!--Navbar menu-->
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-idx-container">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="sps.html">SPS</a></li>
-                <li><a href="about-me.html">About me</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <div class="index-flex-container">
-            <div class="index-main-content"> 
+            <div id="index-main-content">
                 <section class="index-picture">
-                    <img class="index-img" src="images/main-pic.jpg" alt="">
+                    <img class="index-img" src="images/Index-pic.jpeg" alt="">
                 </section>
                 <section class="index-main-intro">
-                    <h1>&lt Greeting &GT</h1>
-                    <p> Hello, my name is Claudia P. Monge Torres. I am a third year <b>Computer Science</b> and
-                        <b>Information Systems</b> student at the University of Puerto Rico at Bayamón.
-                    </p>
-                    <h1>&lt /Greeting &GT</h1>
 
-                     <a href="https://drive.google.com/file/d/1Podsy2wA7F9012-bB1ytlcXs9-EnYs6c/view?usp=sharing">
-                        <button type="button" class="btn btn-outline-dark">Resume</button></a>
-
+                    <h1>Hello! I'm Claudia Monge,</h1>
+                    <h4>Thank you for visiting my digital Portfolio. Feel free to download my resume below.</h4>
+                    <br>
+                    <a href="https://drive.google.com/file/d/1Podsy2wA7F9012-bB1ytlcXs9-EnYs6c/view?usp=sharing">
+                        <button width="80" type="button" class="btn btn-outline-dark">Resume</button></a>
                 </section>
+            </div>
+            <div id="about-idx-container">
+                <div id="about-info">
+          
+                <p>My name is Claudia P. Monge Torres. I am a junior computer science undergraduate student at the
+                    University of Puerto Rico at Bayamón. </p>
+                <p>Ideation and creation have always been a big part of my life. I have always been passionate about
+                    helping others and trying to make a difference in people's lives. That's the reason I enjoy ideating
+                    and designing applications, in the hope of one that making someone's life easier.
+                </p>
+                <p>Fun fact: Some areas and topics that interest me within the tech industry are Software Engineering,
+                    UX Design, Artificial Intelligence(specifically Machine Learning), and Product Management.</p>
+                </div>
                 
-                <section id="week2">
-                    <h2>Week 2: Servlets, Fetch, and JSON</h2>
+                    <img src="./images/linked-in-img.jpg" width="300px" height="300px">
+            </div>
+            <div id="skills-idx-container">
+                <h2>Skills Summary</h2>
 
-                    <a href="/show-series">
-                        <button type="button" class="btn btn-outline-dark">Servlet</button></a>
+                <p>Prototyping tools</p>
+                <img id="skill" src="./images/adobe-xd-icon.png" alt="AdobeXD">
+                <img id="skill" src="./images/figma-icon.png" alt="Figma">
 
-                    <button onclick="showRandomSeries();" type="button" class="btn btn-outline-dark">Randomize</button>
-                   
-                    <p id="text-container"></p>
+                <p>Front End</p>
 
-                </section>
+                <img id="skill" src="./images/html5-icon.png" alt="HTML5">
+                <img id="skill" src="./images/css3-icon.png" alt="CSS3">
+                <img id="skill" src="./images/js-icon.png" alt="JavScript">
+
+                <p>Back End</p>
+                <img id="skill" src="./images/java-icon.png" alt="Java">
+                <img id="skill" src="./images/csharp-icon.png" alt="C#">
+                <img id="skill" src="./images/python-icon.png" alt="Python">
+
 
             </div>
+
+            <footer>
+                <p>Site by Claudia P. Monge Torres</p>
+                <p>updated as of: 4/29/2021</p>
+                <p>Made with ❤️ in Puerto Rico </p>
+            </footer>
 
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
                 integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
@@ -66,7 +102,7 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
                 integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
                 crossorigin="anonymous"></script>
-
+    </section>
 
 </body>
 

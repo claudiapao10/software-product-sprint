@@ -10,6 +10,21 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Projects</title>
+    <style>
+        h1 {
+            font-weight: bold;
+        }
+
+        a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:hover {
+
+            color: rgb(139, 137, 137);
+        }
+    </style>
 </head>
 
 <body class="projects-body">
@@ -17,107 +32,139 @@
         <!--Nav bar = Menu/content bar-->
         <nav class="navbar sticky-top">
             <!-- Name -->
-            <a class="navbar-logo" href="logo">CLAUDIA/MONGE</a>
+            <a class="navbar-logo" href="index.html">CLAUDIA/MONGE</a>
             <!--Navbar menu-->
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="./index.html #about-idx-container">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="sps.html">SPS</a></li>
-                <li><a href="about-me.html">About me</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
+    </section>
+    <div id="project-main-info">
         <h1>My Projects</h1>
+        <p>The projects are organized in descendant order. Feel free to look and download the codes of the following via
+            my Github profile linked below.</p>
+        <p class="projects-github-prof"><img src="images/github-logo.png" width="20" height="20"
+                alt="">&nbspGithub:&nbsp<a href="https://github.com/claudiapao10">claudiapao10</a></p>
+    </div>
 
-        <p class="projects-github-prof"><img src="images/github-logo.png" width="20" height="20" alt=""> Github profile: <a
-                href="https://github.com/claudiapao10">claudiapao10</a></p>
+    <div class="projects-flex-container">
+        <!--Main content is sepparated into two sections main-content and project-pictures-->
+        <div class="project-main-content">
 
+            <section class="project-intro">
 
-        <div class="projects-flex-container">
-            <!--Main content is sepparated into two sections main-content and project-pictures-->
-            <div class="project-main-content">
+                <!--Creating a list for my favorite projects-->
+                <ul class="list-group">
 
-                <section class="project-intro">
+                    <li class="list-group-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-file-earmark" viewBox="0 0 16 16">
+                            <path
+                                d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+                        </svg>
 
-                    <!--Creating a list for my favorite projects-->
-                    <ul class="list-group">
+                        <b>"InfoCheck"</b>
 
-                        <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-file-earmark" viewBox="0 0 16 16">
-                                <path
-                                    d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
-                            </svg>
-                            <b>"De la Casa" Prototype</b>
-                            <p class="project-type">Passion Project (PR Covid-19 Ideathon)</p>
-                            <p class="project-description">Developed with a team a solution that aimed to endeavor the
-                                re-boost of the Puerto Rican economy by building a system that focuses on local and
-                                small businesses buildup. Won “Best Technical Prize” (Sponsored by Holberton School).
-                            </p>
+                        <p><b>Date:</b> March 2021</p>
+                        <p class="project-type"><b>Project Type:</b> SPS '21 Group Project</p>
+                        <p class="project-description">Created with a team a Chrome extension to provide legitimate information on popular topics to prevent misinformation. 
+                        </p>
+                        <p>Worked on the front end of the extension, creating the connection between a JSON file and a JavaScript file to ease the way of retrieving the topics which resulted in a structured user interface with the information displayed correctly.</p>
 
-                            <img src="images/DeLaCasa-Comp.png" alt="">
-                            <img src="images/DeLaCasa-Single.jpg" alt="">
-                            <img src="images/DeLaCasa-iPhone.jpg" alt="">
+                        <img id="infocheck" src="images/infocheck-fe.png" alt="">
+                        <img id="infocheck" src="images/infocheck-vaccines.png" alt="">
+                        <img  src="images/infocheck-data.png" alt="">
 
-                            <p>Read more about this project <a href="about-me.html">here</a>.</p>
+                        <p>Read more about this project <a href="https://github.com/GoogleyGabriel/team-13-google-sps.git">here</a>.</p>
 
-                        </li>
+                    </li>
 
-                        <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                                <path
-                                    d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
-                                <path
-                                    d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z" />
-                            </svg> <b>"Galaxy Wars"</b>
-                            <p class="project-type">School Project</p>
-                            <p class="project-description">Developed a creative and innovative program implementing
-                                threads.
-                            </p>
+                    <li class="list-group-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-file-earmark" viewBox="0 0 16 16">
+                            <path
+                                d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+                        </svg>
 
-                            <img src="images/galaxy-wars-2.jpg" alt="">
-                            <img src="images/galaxy-wars-1.jpg" alt="">
-                            <img src="images/galaxy-wars-3.jpg" alt="">
+                        <b>De la Casa" Prototype</b>
 
-                            <p>See the project <a href="https://github.com/claudiapao10/Galaxy-Wars">here</a>.</p>
-                        </li>
+                        <p><b>Date:</b> January 2021</p>
+                        <p class="project-type"><b>Project Type:</b> Passion Project (PR Covid-19 Ideathon)</p>
+                        <p class="project-description">Developed with a team a solution that aimed to endeavor the
+                            re-boost of the Puerto Rican economy by building a system that focuses on local and
+                            small businesses buildup. Won “Best Technical Prize” (Sponsored by Holberton School).
+                        </p>
+                        <p> Worked on the User Interface prototype in Adobe XD and the businesses information system
+                            using WinForms in C#.</p>
 
-                        <li class="list-group-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                                <path
-                                    d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
-                                <path
-                                    d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z" />
-                            </svg><b>"Monoloro Zoo Database"</b>
-                            <p class="project-type">School Project</p>
-                            <p class="project-description">Development of a database for the "Monoloro Zoo". The design
-                                of the following is organized through the relations matrix, Entity Relational Diagram,
-                                and Physical Design that has sample data. The SQL program implements queries and SQL
-                                Plus.
-                            </p>
+                        <img src="images/DeLaCasa-Comp.png" alt="">
+                        <img src="images/DeLaCasa-Single.jpg" alt="">
+                        <img src="images/DeLaCasa-iPhone.jpg" alt="">
 
-                            <img src="images/monoloro-employees.png" alt="">
-                            <img src="images/monoloro-erd.png" alt="">
-                            <img src="images/monoloro-query.png" alt="">
+                    </li>
 
-                            <p>See the project <a href="https://github.com/claudiapao10/Monoloro-Zoo-Database">here</a>.
-                            </p>
-                        </li>
+                    <li class="list-group-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+                            <path
+                                d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+                            <path
+                                d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z" />
+                        </svg> <b>"Galaxy Wars"</b>
+                        <p><b>Date:</b> December 2020</p>
+                        <p class="project-type"><b>Project Type:</b> Operating Systems Project</p>
+                        <p class="project-description"><b>Project Requirements:</b> Develop a creative and innovative
+                            program implementing threads. The program must have sound, movement using the run() method
+                            of the thread class, and a Graphical User interface(GUI).
+                        </p>
+                        <p>Developed with a partner a creative “galaxy shooting” game implementing threads in Java. </p>
+                        <p> Worked on the thread that displayed the timer and the class that updated of the score every
+                            time the user hit a spaceship.</p>
+                        <img src="images/galaxy-wars-2.jpg" alt="">
+                        <img src="images/galaxy-wars-1.jpg" alt="">
+                        <img src="images/galaxy-wars-3.jpg" alt="">
 
-                </section>
+                        <p>See the project <a href="https://github.com/claudiapao10/Galaxy-Wars">here</a>.</p>
+                    </li>
 
-            </div>
+                    <li class="list-group-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+                            <path
+                                d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+                            <path
+                                d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z" />
+                        </svg><b>"Monoloro Zoo Database"</b>
+                        <p><b>Date:</b> December 2020</p>
+                        <p class="project-type"><b>Project Type:</b> Database Deisgn and Programming Project</p>
+                        <p class="project-description">Development of a database for the "Monoloro Zoo". Designed the
+                            relation matrix, ERD, and physical design with sample data that resulted in an Oracle
+                            SQL-programmed database for the “Monoloro Zoo” that implemented queries and an SQL Plus
+                            report.
+                            Plus.
+                        </p>
 
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-                integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-                integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-                crossorigin="anonymous"></script>
+                        <img src="images/monoloro-employees.png" alt="">
+                        <img src="images/monoloro-erd.png" alt="">
+                        <img src="images/monoloro-query.png" alt="">
+
+                        <p>See the project <a href="https://github.com/claudiapao10/Monoloro-Zoo-Database">here</a>.
+                        </p>
+                    </li>
+
+                </ul>
+            </section>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+            integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+            integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
