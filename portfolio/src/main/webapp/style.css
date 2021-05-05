@@ -84,16 +84,15 @@ nav .nav a:hover {
 
 #about-idx-container {
   background-color: #8b8b8b1c;
-  margin-top: 80px;
+  margin-top: 20px;
   width: 1000;
   max-width: 100%;
-  margin-bottom: 20px;
+ margin-bottom: 30px;;
   display: flex;
 }
 
 #about-idx-container img {
-  margin-top: 15px;
-  margin-right: 15px;
+   margin: 15px;
 }
 
 #skills-idx-container {
